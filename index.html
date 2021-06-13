@@ -1,137 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    
-    
-    <title>Frontend Mentor | [Blogr]</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Overpass?preview.text_type=custom">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap" rel="stylesheet">
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" Shivam Abraham, Mr Abraham, Shivam, Abraham, Html , CSs , Blogr Landing Page">
+    <meta name="description" content="Blogr Landing PAge Using HTML, CSS , JS">
+    <title>Frontend Mentor</title>
+    <link rel="stylesheet" href="/Bloger-Grid.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-  
-  <div class="container">
-    <header>
-      <nav>
-        <img src="/images/logo.svg" alt="">
-        <ul>
-          <li>Product <img src="/images/icon-arrow-light.svg" alt="">
-          </li>
-          <li>Company <img src="/images/icon-arrow-light.svg" alt=""></li>
-          <li>Connect <img src="/images/icon-arrow-light.svg" alt=""></li>
-        </ul>
-      </nav>
-      <div class="log">
-        <a href="">Log in</a>
-        <a class="active" href="">Sign Up</a>
-        <!-- <img src="/images/icon-hamburger.svg" alt=""> -->
-      </div>
+    <header id="head">
+        <div class="header-top-container">
+            <div class="header-top-left">
+                <div class="logo-top">
+                    <img src="./images/logo.svg" alt="">
+                </div>
+                <div class="toggle">
+
+                </div> 
+                <div class="header-nav">
+                  
+                    <div class="dropdown">
+                        <a class="dropbtn">Product <img src="./images/icon-arrow-light.svg" alt=""></a>
+                        <div class="dropdown-content">
+                        <a href="#">Overview</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Marketplace</a>
+                        <a href="#">Features</a>
+                        <a href="#">Integrations</a>
+                    
+                        </div>
+                      </div>
+                    
+                      <div class="dropdown">
+                        <a class="dropbtn">Company <img src="./images/icon-arrow-light.svg" alt=""></a>
+                        <div class="dropdown-content">
+                        <a href="#">About</a>
+                        <a href="#">Team</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                    
+                        </div>
+                      </div>
+                    
+                      <div class="dropdown">
+                        <a class="dropbtn">Connect <img src="./images/icon-arrow-light.svg" alt=""></a>
+                        <div class="dropdown-content">
+                        <a href="https://twitter.com/abraham_shivam">Twitter</a>
+                        <a href="https://www.instagram.com/shivamabraham/">Instagram</a>
+                        <a href="https://www.linkedin.com/in/shivam-kumar-06a5951b9/">LinkedIn</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="header-top-right">
+                <a href="./loginform.html" class="login" target="_blank">Log In</a>
+                <a href="./signupform.html" class="login-active" target="_blank">Sign Up</a>
+            </div>
+        </div>
+        <div class="header-bottom-container">
+            <h2>A modern Publishing Platform</h2>
+            <p>Grow your audience and build your online brand </p>
+            <div class="btn">
+                <a href="" class="Startactive">start for free</a>
+                <a href="" class="active">Learn More</a>
+            </div>
+        </div>
     </header>
-    <div class="headings">
-      <h2 id="heading">A modern publishing Platform</h2>
-      <p id="para">Grown your audience and build your online brand</p>
+    <div class="container">
+        <div class="content">
+            <h2 class="text-align">Designed for the Future</h2>
+            <section class="split">
+                <div class="section-first-content">
+                    <div>
+                       <h2>Introducing an extensible editor</h2>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cumque soluta asperiores quae. Accusantium, porro veritatis nobis modi harum tempora similique eaque! Quasi hic beatae odio vitae voluptates itaque veritatis!</p>
+                    </div>
+                    <div>
+                        <h2>Robust content managment</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laboriosam aspernatur veniam dolorem repudiandae odit! Expedita tempora ab soluta et.</p>
+                    </div>
+                </div>
+                <div class="image-first">
+                    <img src="./images/illustration-editor-mobile.svg" alt="sections-first image">
+                </div>
+            </section>
+        </div>
+        <div class="content">
+            <section class="split second-section">
+               <div class="image-second">
+                   <img id="mobiles" src="./images/illustration-phones.svg" alt="second image">
+               </div>
+               <div class="section-second-content">
+                   <h2>State of the Art Infrastructure</h2>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque facere quod cupiditate ullam velit eius accusamus, recusandae laboriosam quas sed! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, accusantium!</p>
+               </div>
+            </section>
+        </div>
+        <div class="content">
+            <section class="split third-section">
+              <div class="image-third">
+                  <img src="./images/illustration-laptop-mobile.svg" alt="Third Image">
+              </div>
+              <div class="section-third-content">
+                  <div>
+                      <h2>Free, Open, Simple</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore a provident est et quae quisquam facere ipsa explicabo perferendis hic! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, suscipit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, corrupti?</p>
+                  </div>
+                  <div>
+                      <h2>
+                          Powerful tooling
+                      </h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magni distinctio doloribus odit corrupti voluptas ullam porro officia ipsum illum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, illo.</p>
+                  </div>
+              </div>
+            </section>
+        </div>
     </div>
-    <div class="heading-btn">
-      <a class="active" href="">Start for free</a>
-      <a class="active-learn" href="">Learn more</a>
-    </div>
-  </div>
-  
-  <div class="section">
-    
-      <h3 id="h3">Designed for the future</h3>
-    
-    <div class="section-left">
-      <div class="left-top">
-        <h4>Interoducing an extensible editor</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quidem debitis sequi, commodi dicta mollitia dolores nobis labore, iusto voluptas quae nisi eveniet illum facilis in exercitationem modi corporis, voluptates esse laudantium praesentium maxime animi minima! At molestias hic officia, natus modi veniam id odio alias eligendi itaque ipsam vitae.</p>
-      </div>
-      <div class="left-bottom">
-        <h4>Robust content management</h4>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima distinctio sapiente optio possimus dolor nemo quaerat, error cum ab neque alias, fuga ipsa debitis nihil.</p>
-      </div>
-    </div>
-    <div class="section-right">
-      <img src="/images/illustration-editor-desktop.svg" alt="">
-    </div>
-  </div>
-  
-  
-  <div class="mobile-illustration">
-    <!-- <img src="/images/bg-pattern-circles.svg" alt=""> -->
-    <div class="items">
-      <img class="mobile" src="/images/illustration-phones.svg" alt="mobile-image">
-       <div class="item-content">
-         <h2>State of the Art Infrastructure</h2>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima placeat quos aspernatur assumenda, omnis obcaecati aliquam rem magnam? Architecto consectetur voluptatum esse, quisquam ipsam accusantium illo quas cupiditate id quis.</p>
-       </div>     
-    </div>
-  </div>
-  <div class="laptop">
-    <div class="laptop-image">
-      <img src="/images/illustration-laptop-desktop.svg" alt="">
-    </div>
-    <div class="laptop-right-section">
-      <div class="right-top">
-        <h3>Free,Open,Simple</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex nobis accusantium et aperiam odio dolorem sed praesentium minima sequi quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, labore!</p>
-      </div>
-      <div class="right-bottom">
-        <h3>Powerful tooling</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, aspernatur eos. Nesciunt accusamus omnis tenetur veritatis veniam beatae minima excepturi explicabo molestiae minus? Natus, delectus.</p>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div class="grid">
-      <div class="logo">
-        <img src="/images/logo.svg" alt="">
-      </div>
-      <div class="grid-content">
-        <h3>Product</h3>
-        <ul>
-          <li>Overview</li>
-          <li>Pricing</li>
-          <li>Marketplace</li>
-          <li>Features</li>
-          <li>Integrations</li>
-        </ul>
-      </div>
-      <div class="grid-content">
-        <h3>Company</h3>
-        <ul>
-          <li>About</li>
-          <li>Team</li>
-          <li>Blog</li>
-          <li>Careers</li>
-        </ul>
-      </div>
-      <div class="grid-content">
-        <h3>Connect</h3>
-        <ul>
-          <li>Contct</li>
-          <li>Newsletter</li>
-          <li>LinkedIn</li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Shivam Abraham</a>.
-  </div>
+    <footer>
+        <div class="grid">
+          <div class="logo-bootom">
+            <img src="./images/logo.svg" alt="">
+          </div>
+          <div class="grid-content">
+            <h3>Product</h3>
+            <ul>
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+          </div>
+          <div class="grid-content">
+            <h3>Company</h3>
+            <ul>
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+          <div class="grid-content">
+            <h3>Connect</h3>
+            <ul>
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <script>
+          let toggle = document.querySelector('.toggle');
+          let navigation = document.querySelector('.header-nav');
+          let button = document.querySelector('.dropbtn');
+          let head = document.getElementById('head');
+
+          toggle.onclick = function(){
+        toggle.classList.toggle('active');
+        navigation.classList.toggle('active')
+        head.classList.toggle('active')
+        
+    }
+
+      </script>
 </body>
 </html>
+                            
+
+  
